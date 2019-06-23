@@ -271,7 +271,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fbab802c560467c4e99cbc734c9d6093, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2637b6b02ebcb3d45b250aac15a666ad, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -505,7 +505,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17400001, y: 0.6833312}
   m_AnchorMax: {x: 0.82134646, y: 0.83000004}
-  m_AnchoredPosition: {x: -0.26000023, y: 0.22000003}
+  m_AnchoredPosition: {x: -0.26000214, y: 0.2199974}
   m_SizeDelta: {x: 2.1899996, y: 1.3699999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &434562820
@@ -590,6 +590,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434562818}
   m_CullTransparentMesh: 0
+--- !u!114 &452039634 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2589784119006319817, guid: 38304e6919f1e634faaaa2b97c2e8d69,
+    type: 3}
+  m_PrefabInstance: {fileID: 771776459}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &473018602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 473018604}
+  - component: {fileID: 473018603}
+  m_Layer: 0
+  m_Name: BattleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &473018603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473018602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0de2dfe779a0c943aba9dd15d78e208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleState: 0
+  HeroesInBattle: []
+  EnemiesInBattle: []
+--- !u!4 &473018604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473018602}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 128.64142, y: 157.06885, z: 0.32214355}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &492911300
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,10 +965,10 @@ RectTransform:
   m_Father: {fileID: 253122799}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.49111983, y: 0.007}
-  m_AnchorMax: {x: 0.99600005, y: 0.355331}
-  m_AnchoredPosition: {x: 1.9299927, y: -0.1499939}
-  m_SizeDelta: {x: 2.1399803, y: 5.7}
+  m_AnchorMin: {x: 0.50451195, y: 0.016317016}
+  m_AnchorMax: {x: 0.99151194, y: 0.3421035}
+  m_AnchoredPosition: {x: -1.0700073, y: 0.3500061}
+  m_SizeDelta: {x: 14.13998, y: 14.700001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647920721
 MonoBehaviour:
@@ -932,7 +990,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fbab802c560467c4e99cbc734c9d6093, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2637b6b02ebcb3d45b250aac15a666ad, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1192,6 +1250,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2589784118293784047, guid: 38304e6919f1e634faaaa2b97c2e8d69,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2637b6b02ebcb3d45b250aac15a666ad,
+        type: 3}
     - target: {fileID: 2589784118963629392, guid: 38304e6919f1e634faaaa2b97c2e8d69,
         type: 3}
       propertyPath: m_FontData.m_FontStyle
@@ -1282,7 +1346,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fbab802c560467c4e99cbc734c9d6093, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2637b6b02ebcb3d45b250aac15a666ad, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1413,6 +1477,8 @@ MonoBehaviour:
     intellect: 0
     dexterity: 0
     agility: 0
+  currentState: 0
+  progressBar: {fileID: 2589784119006319817}
 --- !u!1 &932590890
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,7 +1536,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fbab802c560467c4e99cbc734c9d6093, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2637b6b02ebcb3d45b250aac15a666ad, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1603,6 +1669,17 @@ MonoBehaviour:
     curATK: 0
     baseDEF: 0
     curDEF: 0
+  hero:
+    name: 
+    baseHP: 0
+    currentHP: 0
+    baseMP: 0
+    currentMP: 0
+    stamina: 0
+    intellect: 0
+    dexterity: 0
+    agility: 0
+  currentState: 0
 --- !u!1 &1104416256
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,6 +1796,17 @@ MonoBehaviour:
     curATK: 0
     baseDEF: 0
     curDEF: 0
+  hero:
+    name: 
+    baseHP: 0
+    currentHP: 0
+    baseMP: 0
+    currentMP: 0
+    stamina: 0
+    intellect: 0
+    dexterity: 0
+    agility: 0
+  currentState: 0
 --- !u!1 &1308330205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,6 +2072,8 @@ MonoBehaviour:
     intellect: 0
     dexterity: 0
     agility: 0
+  currentState: 0
+  progressBar: {fileID: 452039634}
 --- !u!1 &2009597882
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,6 +2378,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112488036}
   m_CullTransparentMesh: 0
+--- !u!114 &2589784119006319817 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2589784119006319817, guid: 38304e6919f1e634faaaa2b97c2e8d69,
+    type: 3}
+  m_PrefabInstance: {fileID: 2589784119539914148}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2589784119539914148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2404,6 +2506,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2589784119006319816, guid: 38304e6919f1e634faaaa2b97c2e8d69,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38304e6919f1e634faaaa2b97c2e8d69, type: 3}
