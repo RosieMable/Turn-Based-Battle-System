@@ -2,18 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public sealed class BattleStateMachine : MonoBehaviour
+public class BattleStateMachine : Singleton<BattleStateMachine>
 {
-    private static BattleStateMachine instance = new BattleStateMachine();
-
-    public static BattleStateMachine Instance
-    {
-        get
-        {
-            return instance;
-        }
-    }
-
     public enum PerformAction
     {
         WAIT,

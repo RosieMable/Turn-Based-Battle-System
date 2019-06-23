@@ -632,6 +632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleState: 0
+  PerformList: []
   HeroesInBattle: []
   EnemiesInBattle: []
 --- !u!4 &473018604
@@ -1468,7 +1469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hero:
-    name: 
+    name: 'Hero '
     baseHP: 0
     currentHP: 0
     baseMP: 0
@@ -1658,7 +1659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy:
-    name: 
+    name: Enemy
     EnemyType: 0
     EnemyRarity: 0
     baseHP: 0
@@ -1669,16 +1670,6 @@ MonoBehaviour:
     curATK: 0
     baseDEF: 0
     curDEF: 0
-  hero:
-    name: 
-    baseHP: 0
-    currentHP: 0
-    baseMP: 0
-    currentMP: 0
-    stamina: 0
-    intellect: 0
-    dexterity: 0
-    agility: 0
   currentState: 0
 --- !u!1 &1104416256
 GameObject:
@@ -1785,7 +1776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy:
-    name: 
+    name: Enemy 2
     EnemyType: 0
     EnemyRarity: 0
     baseHP: 0
@@ -1796,16 +1787,6 @@ MonoBehaviour:
     curATK: 0
     baseDEF: 0
     curDEF: 0
-  hero:
-    name: 
-    baseHP: 0
-    currentHP: 0
-    baseMP: 0
-    currentMP: 0
-    stamina: 0
-    intellect: 0
-    dexterity: 0
-    agility: 0
   currentState: 0
 --- !u!1 &1308330205
 GameObject:
@@ -2063,7 +2044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hero:
-    name: 
+    name: Hero 2
     baseHP: 0
     currentHP: 0
     baseMP: 0

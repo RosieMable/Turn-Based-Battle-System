@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyStateMachine : MonoBehaviour
 {
     private BattleStateMachine BSM;
-
     public BaseEnemy enemy;
 
     public enum TurnState
@@ -25,6 +24,11 @@ public class EnemyStateMachine : MonoBehaviour
 
     //For animation
     private Vector3 startPos;
+
+    private void Awake()
+    {
+        BSM = BattleStateMachine.Instance;
+    }
 
     void Start()
     {
@@ -78,7 +82,7 @@ public class EnemyStateMachine : MonoBehaviour
 
         myTurn.Attacker = enemy.name;
         myTurn.AttackerGO = this.gameObject;
-        myTurn.Attack_Target = BattleStateMachine.Instance.HeroesInBattle[Random.Range(0, BattleStateMachine.Instance.HeroesInBattle.Count)];
+        myTurn.Attack_Target = BSM.HeroesInBattle[Random.Range(0, BSM.HeroesInBattle.Count)];
         BSM.CollectTurns(myTurn);
     }
 }
